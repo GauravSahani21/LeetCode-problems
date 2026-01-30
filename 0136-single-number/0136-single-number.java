@@ -7,7 +7,7 @@ class Solution {
             return nums[i];
            }
         }
-        return nums[nums.length - 1];
+        return nums[nums.length ];
 
     }
 }
