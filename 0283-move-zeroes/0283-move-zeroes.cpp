@@ -7,7 +7,6 @@ public:
                 count++;
             }
         }
-
         for(int i=0; i<count;i++){
             for(int j=0;j<nums.size()-1;j++){
                 if(nums[j]==0){
