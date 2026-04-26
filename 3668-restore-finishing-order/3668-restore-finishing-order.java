@@ -4,10 +4,11 @@ class Solution {
         int[] arr = new int[friends.length];
         int k = 0;
 
-        for (int i = 0; i < order.length; i++) {
+        for (int i = 0; i <order.length; i++) {
             for (int j = 0; j < friends.length; j++) {
                 if (order[i] == friends[j]) {
-                    arr[k++] = order[i ];
+                    arr[k] = order[i ];
+                    k++;
                     break; 
                 }
             }
