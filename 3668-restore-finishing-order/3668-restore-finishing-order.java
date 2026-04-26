@@ -6,9 +6,9 @@ class Solution {
 
         for (int i = 0; i < order.length; i++) {
             for (int j = 0; j < friends.length; j++) {
-                if (order[i] == friends[j]) {
-                    arr[k++] = order[i];
-                    break;
+                if (order[j] == friends[i]) {
+                    arr[k++] = order[i ];
+                    break; 
                 }
             }
         }
