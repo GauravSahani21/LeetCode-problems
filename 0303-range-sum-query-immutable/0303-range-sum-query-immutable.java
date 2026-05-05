@@ -1,5 +1,5 @@
 class NumArray {
-    int [] arr = ne int{};
+    int [] arr;
     public NumArray(int[] nums) {
         arr = nums;
     }
