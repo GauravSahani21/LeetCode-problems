@@ -4,8 +4,8 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             boolean unique = true;
 
-            for (int j = 0; j < s.length(); j++) {
-                if (i != j && s.charAt(i) == s.charAt(j)) {
+            for (int j = 1; j < s.length(); j++) {
+                if (s.charAt(i) == s.charAt(j)) {
                     unique = false;
                     break;
                 }
