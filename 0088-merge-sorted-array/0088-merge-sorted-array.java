@@ -3,7 +3,10 @@ class Solution {
         for(int i=0; i<n; i++){
             nums1[m+i] = nums2[i];
         }
+
         Arrays.sort(nums1);
-        
+        for(int i=0; i<m; i++){
+            System.out.println(nums1[i]);
+        }
     }
 }
