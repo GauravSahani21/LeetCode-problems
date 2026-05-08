@@ -5,8 +5,6 @@ class Solution {
         }
 
         Arrays.sort(nums1);
-        for(int i=0; i<m; i++){
-            System.out.println(nums1[i]);
-        }
+        
     }
 }
