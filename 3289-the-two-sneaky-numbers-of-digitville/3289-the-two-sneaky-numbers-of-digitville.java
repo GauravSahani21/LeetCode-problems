@@ -8,8 +8,8 @@ class Solution {
             hash[nums[i]]++;
 
             if (hash[nums[i]] == 2) {
-                ans[k++] = nums[i];
-
+                ans[k] = nums[i];
+                k++;
             }
         }
 
