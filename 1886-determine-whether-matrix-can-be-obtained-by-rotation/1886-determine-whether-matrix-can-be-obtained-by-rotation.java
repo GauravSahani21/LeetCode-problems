@@ -26,9 +26,14 @@ class Solution {
     }
 
     public boolean findRotation(int[][] mat, int[][] target) {
-        if (mat.length != target.length) return false;
+        if (mat.length != target.length) {
+            return false;
+        }
 
-        if (Arrays.deepEquals(mat, target)) return true;
+        if (Arrays.deepEquals(mat, target)) {
+
+            return true;
+        }
 
         for (int i = 0; i < 3; i++) {
             rotate(mat);
