@@ -1,12 +1,13 @@
 class Solution {
     public boolean rotateString(String s, String goal) {
-        if (s.length() != goal.length()) {
-            return false;
-        }
 
         char[] ch = s.toCharArray();
         char[] ch1 = goal.toCharArray();
         int n = ch.length;
+
+        if (ch.length != ch1.length) {
+            return false;
+        }
 
         for (int i = 0; i < n; i++) {
             if (Arrays.equals(ch, ch1)) {
