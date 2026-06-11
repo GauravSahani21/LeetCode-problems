@@ -1,21 +1,17 @@
 class Solution {
     public int firstUniqChar(String s) {
-        
-        for (int i = 0; i < s.length(); i++) {
-            boolean unique = true;
+        char [] ch  = s.toCharArray();
 
-            for (int j = 1; j < s.length(); j++) {
-                if (s.charAt(i) == s.charAt(j)) {
-                    unique = false;
-                    break;
-                }
-            }
+        int [] hash = new int[26];
+        for(int i=0; i<s.length(); i++){
+            hash[s.charAt(i) - 'a']++;
+        }
 
-            if (unique) {
+        for(int i=0; i<s.length(); i++){
+            if(hash[s.charAt(i)-'a'] == 1){
                 return i;
             }
         }
-
         return -1;
     }
 }
