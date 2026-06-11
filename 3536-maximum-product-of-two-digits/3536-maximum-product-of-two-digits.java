@@ -8,7 +8,7 @@ class Solution {
             arr[i] = s.charAt(i) - '0';
         }
          Arrays.sort(arr);
-        n = arr.length;
+         n = arr.length;
          return arr[n-1]*arr[n-2];
     }
 }
