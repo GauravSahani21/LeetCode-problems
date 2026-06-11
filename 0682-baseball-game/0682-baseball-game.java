@@ -11,12 +11,15 @@ class Solution {
                 st.push(num2);
                 st.push(num);
                 st.push(num3);
+
             } else if (operations[i].equals("D")) {
                 int num = st.pop();
                 st.push(num);
                 st.push(num + num);
+
             } else if (operations[i].equals("C")) {
                 st.pop();
+                
             } else {
                 int num = Integer.parseInt(operations[i]);
                 st.push(num);
