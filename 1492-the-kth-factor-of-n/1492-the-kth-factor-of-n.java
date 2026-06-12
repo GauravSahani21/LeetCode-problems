@@ -7,7 +7,7 @@ class Solution {
                 arr.add(i);
             }
         }
-        if(k> arr.size()){
+        if(k > arr.size()){
             return -1;
         }
         return arr.get(k-1);
