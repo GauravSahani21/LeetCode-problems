@@ -4,9 +4,9 @@ class Solution {
 
         for(int i=0; i<nums.size(); i++){
             if(Integer.bitCount(i)==k){
-                sum+= nums.get(i);
-            }
+                    sum+= nums.get(i);
         }
-        return sum;
+        }
+    return sum;
     }
 }
