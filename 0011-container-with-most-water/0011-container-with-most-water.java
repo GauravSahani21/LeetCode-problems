@@ -24,6 +24,7 @@ class Solution {
             } else {
                 right--;
             }
+            
         }
         return area;
     }
