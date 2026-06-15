@@ -31,9 +31,7 @@ struct ListNode* deleteMiddle(struct ListNode* head) {
     }
 
     struct ListNode* temp2 = temp->next;
-
     temp->next = temp->next->next;
-
     free(temp2);
 
     return head;
