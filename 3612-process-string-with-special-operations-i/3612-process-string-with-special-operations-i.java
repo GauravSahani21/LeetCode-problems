@@ -1,26 +1,23 @@
-
 class Solution {
     public String processStr(String s) {
-        ArrayList<Character> ans = new ArrayList<>();
+        StringBuilder ans = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++) {
-            if (Character.isLetter(s.charAt(i))) {
-                ans.add(s.charAt(i));
-            } else if (s.charAt(i) == '*') {
-                if (!ans.isEmpty()) {
-                    ans.remove(ans.size() - 1);
+            char ch = s.charAt(i);
+
+            if (Character.isLetter(ch)) {
+                ans.append(ch);
+            } else if (ch == '*') {
+                if (ans.length() > 0) {
+                    ans.deleteCharAt(ans.length() - 1);
                 }
-            } else if (s.charAt(i) == '#') {
-                ans.addAll(new ArrayList<>(ans));
-            } else if (s.charAt(i) == '%') {
-                Collections.reverse(ans);
+            } else if (ch == '#') {
+                ans.append(ans.toString());
+            } else if (ch == '%') {
+                ans.reverse();
             }
         }
 
-        StringBuilder result = new StringBuilder();
-        for (char c : ans) {
-            result.append(c);
-        }
-        return result.toString();
+        return ans.toString();
     }
 }
