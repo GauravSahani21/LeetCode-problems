@@ -18,9 +18,9 @@ class Solution {
         }
 
         StringBuilder result = new StringBuilder();
-for (char c : ans) {
-    result.append(c);
-}
-return result.toString();
+        for (char c : ans) {
+            result.append(c);
+        }
+        return result.toString();
     }
 }
