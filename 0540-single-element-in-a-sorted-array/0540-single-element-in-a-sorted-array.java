@@ -1,0 +1,16 @@
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int [] hash = new int[60001];
+
+        for(int i=0; i<nums.length; i++){
+            hash[nums[i]]++;
+        }
+
+        for(int i=0; i<hash.length; i++){
+            if(hash[i] == 1){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
