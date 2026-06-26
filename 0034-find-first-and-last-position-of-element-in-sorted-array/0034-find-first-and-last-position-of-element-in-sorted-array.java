@@ -16,6 +16,7 @@ class Solution {
                 if(arr.size()==1){
                     arr.add(i);
                 }
+                break;
             }
 
         }
