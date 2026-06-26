@@ -20,9 +20,11 @@ class Solution {
             }
 
         }
+
         if(arr.size()==0){
             return new int []{-1,-1};
         }
+        
         return new int[]{arr.get(0), arr.get(1)};
 
     }
