@@ -8,6 +8,8 @@ class Solution {
             if(digit>ans){
                 ans = digit;
             }
+
+            if(ans == 9) return 9;
         }
 
         return ans;
