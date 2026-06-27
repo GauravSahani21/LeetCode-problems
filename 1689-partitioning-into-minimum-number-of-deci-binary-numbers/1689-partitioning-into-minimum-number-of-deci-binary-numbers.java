@@ -9,7 +9,6 @@ class Solution {
                 ans = digit;
             }
 
-            if(ans == 9) return 9;
         }
 
         return ans;
