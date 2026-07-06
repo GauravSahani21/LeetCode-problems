@@ -10,9 +10,9 @@ class Solution {
             }
 
             if(count > nums.length / 2){
-                return i;
+                return nums[i];
             }
         }
-        return -1;
+        return 0;
     }
 }
