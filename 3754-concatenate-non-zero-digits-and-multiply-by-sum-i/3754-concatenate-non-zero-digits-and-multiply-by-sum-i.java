@@ -1,8 +1,5 @@
 class Solution {
     public long sumAndMultiply(int n) {
-        if (n <= 0)
-            return 0;
-
         int temp = n;
         long x = 0;
         long sum = 0;
