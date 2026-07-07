@@ -8,16 +8,13 @@ class Solution {
 
         while (temp > 0) {
             long digit = temp % 10;
-
             if (digit > 0) {
                 sum += digit;
                 x = x + (digit * carry);
                 carry *= 10;
             }
-
             temp /= 10;
         }
-
         return x * sum;
     }
 }
