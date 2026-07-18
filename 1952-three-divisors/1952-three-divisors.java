@@ -8,9 +8,7 @@ class Solution {
             }
         }
 
-        if(count == 3) return true;
-
-        return false;
+        return (count == 3);
 
     }
 }
