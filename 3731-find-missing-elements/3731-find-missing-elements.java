@@ -11,11 +11,11 @@ class Solution {
 
             for (int j = 0; j < nums.length; j++) {
                 if (i == nums[j]) {
-                   b = true;
+                    b = true;
                 }
             }
 
-            if(!b){
+            if (!b) {
                 arr.add(i);
             }
         }
