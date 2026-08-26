@@ -17,8 +17,8 @@ class Solution {
 
             while(low < high){
                 int temp = matrix[i][low];
-                matrix[i][low]= matrix[high][i];
-                matrix[high][i] = temp;
+                matrix[i][low]= matrix[i][high];
+                matrix[i][high] = temp;
 
                 low ++;
                 high --;
