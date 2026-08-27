@@ -12,7 +12,8 @@ class Solution {
 
                 if (stack.peek() == '(' && s.charAt(i) == ')' ||
                         stack.peek() == '{' && s.charAt(i) == '}' ||
-                        stack.peek() == '[' && s.charAt(i) == ']') {
+                        stack.peek() == '[' && s.charAt(i) == ']'
+                    ){
                     stack.pop();
                 }else{
                     return false;
