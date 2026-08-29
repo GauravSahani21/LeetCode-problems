@@ -10,8 +10,10 @@ class Solution {
 
         while (left < right) {
             int max = 1;
+
             h = Math.min(height[left], height[right]);
             w = right - left;
+            
             max = h * w;
 
             if (max > area) {
