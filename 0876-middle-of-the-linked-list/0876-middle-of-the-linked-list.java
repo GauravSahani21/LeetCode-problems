@@ -19,23 +19,14 @@ class Solution {
             return head;
         }
 
-        int count=0;
+        ListNode slow = head;
+        ListNode fast = head;
 
-        ListNode temp = head;
-
-        while(temp != null){
-            count++;
-            temp = temp.next;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
         }
 
-        int n = count/2;
-        temp = head;
-
-        for(int i=0; i<n; i++){
-            temp = temp.next;
-
-           
-        }
-        return temp;
+        return slow;
     }
 }
