@@ -37,6 +37,7 @@ class Solution {
         }
 
         ListNode newHead = reverse(slow.next);
+        
         ListNode first = head;
         ListNode second = newHead;
 
