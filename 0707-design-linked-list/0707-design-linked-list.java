@@ -74,7 +74,6 @@ class MyLinkedList {
             if (temp == null) {
                 return;
             }
-
             temp = temp.next;
         }
 
@@ -102,7 +101,6 @@ class MyLinkedList {
             if (temp == null) {
                 return;
             }
-
             temp = temp.next;
         }
 
