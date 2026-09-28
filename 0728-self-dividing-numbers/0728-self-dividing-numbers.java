@@ -21,9 +21,7 @@ class Solution {
                 }else{
                     b = true;
                 }
-
             }
-
             if(b){
                 arr.add(i);
             }
