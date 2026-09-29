@@ -2,7 +2,7 @@ class Solution {
 
     public List<List<Integer>> findPrimePairs(int num) {
         List<List<Integer>> ans = new ArrayList<>();
-        if(num <= 1){
+        if (num <= 1) {
             return ans;
         }
 
@@ -36,7 +36,6 @@ class Solution {
                 List<Integer> list = new ArrayList<>();
                 list.add(a);
                 list.add(b);
-
                 ans.add(list);
 
                 i++;
