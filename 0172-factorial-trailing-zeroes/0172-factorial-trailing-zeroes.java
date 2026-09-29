@@ -6,7 +6,7 @@ class Solution {
         
         while(x <= n){
             count += n/x;
-            x = x*5;
+            x *= 5;
         }
 
         return count;
