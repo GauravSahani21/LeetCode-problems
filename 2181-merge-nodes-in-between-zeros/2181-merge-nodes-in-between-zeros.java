@@ -20,12 +20,11 @@ class Solution {
             }
 
             if(temp.next != null){
-                temp.next  = temp.next.next;
+                temp.next = temp.next.next;
             }
 
             temp = temp.next;
         }
         return head.next;
-
     }
 }
