@@ -10,7 +10,7 @@
  */
 class Solution {
     public ListNode mergeNodes(ListNode head) {
-        ListNode temp = head;
+        ListNode temp = head.next;
 
         while(temp != null){
 
@@ -25,7 +25,7 @@ class Solution {
 
             temp = temp.next;
         }
-        return head;
+        return head.next;
 
     }
 }
