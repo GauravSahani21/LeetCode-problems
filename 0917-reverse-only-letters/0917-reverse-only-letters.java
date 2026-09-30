@@ -20,6 +20,6 @@ class Solution {
                 high--;
             }
         }
-    return new String(ch);
+        return new String(ch);
     }
 }
