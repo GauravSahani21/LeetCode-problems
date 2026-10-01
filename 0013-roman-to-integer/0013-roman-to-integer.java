@@ -11,13 +11,18 @@ class Solution {
         map.put('D', 500);
         map.put('M', 1000);
 
-        for(int i=0; i<s.length()-1; i++){
-            if(map.get(s.charAt(i)) < map.get(s.charAt(i+1))){
-                result -= map.get(s.charAt(i));
+        int n = s.length();
+
+        for(int i=0; i<n; i++){
+            int curr = map.get(s.charAt(i));
+
+            if(i+1 < n && curr < map.get(s.charAt(i+1))){
+                result -= curr;
             }else{
-                result += map.get(s.charAt(i));
+                result += curr;
             }
         }
-        return result + map.get(s.charAt(s.length()-1));
+
+        return result;
     }
 }
